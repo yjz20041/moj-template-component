@@ -2,7 +2,8 @@
   "name": "moj-template",
   "version": "0.1.0",
   "description": "开发通用npm包脚手架工程模板",
-  "main": "index.js",
+  "main": "./src/index.js",
+  "module": "./es/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf es && babel src --out-dir es --copy-files",
