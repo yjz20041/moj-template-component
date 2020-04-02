@@ -68,8 +68,8 @@
     "react-dom": ">=16.0.0",
     "prop-types": ">=15.6.0"
     {{#elseif compare type 'regular'}}
-    "regularjs": ">=0.6.0",
-    {{#if}}
+    "regularjs": ">=0.6.0"
+    {{/if}}
   },
   "dependencies": {
     "core-js": "^3.6.4"
