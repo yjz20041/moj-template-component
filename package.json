@@ -1,7 +1,7 @@
 {
-  "name": "moj-template",
-  "version": "0.1.0",
-  "description": "开发通用npm包脚手架工程模板",
+  "name": "{{projectName}}",
+  "version": "1.0.0",
+  "description": "{{desc}}",
   "main": "./src/index.js",
   "module": "./es/index.js",
   "scripts": {
@@ -13,14 +13,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yjz20041/moj-template.git"
+    "url": ""
   },
-  "author": "yjz20041",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yjz20041/moj-template/issues"
-  },
-  "homepage": "https://github.com/yjz20041/moj-template#readme",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
