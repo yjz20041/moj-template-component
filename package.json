@@ -1,5 +1,5 @@
 {
-  "name": "123",
+  "name": "{{projectName}}",
   "version": "1.0.0",
   "description": "{{desc}}",
   "main": "./src/index.js",
