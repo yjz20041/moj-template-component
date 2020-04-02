@@ -49,12 +49,12 @@
     "postcss-loader": "^3.0.0",
     "pre-commit": "^1.2.2",
     "precss": "^4.0.0",
-    {{#if compare type 'react'}}
+    {{#if isReact}}
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     {{/if}}
-    {{#if compare type 'regular'}}
+    {{#if isRegular}}
     "regularjs": "^0.6.2",
     {{/if}}
     "style-loader": "^1.1.3",
@@ -64,12 +64,12 @@
     "webpack-dev-server": "^3.10.3"
   },
   "peerDependencies": {
-    {{#if compare type 'react'}}
+    {{#if isReact}}
     "react": ">=16.0.0",
     "react-dom": ">=16.0.0",
     "prop-types": ">=15.6.0"
     {{/if}}
-    {{#if compare type 'regular'}}
+    {{#if isRegular}}
     "regularjs": ">=0.6.0"
     {{/if}}
   },
