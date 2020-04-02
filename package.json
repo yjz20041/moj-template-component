@@ -55,7 +55,7 @@
     "react-dom": "^16.13.1",
     {{#elseif compare type 'regular'}}
     "regularjs": "^0.6.2",
-    {{#if}}
+    {{/if}}
     "style-loader": "^1.1.3",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.42.1",
