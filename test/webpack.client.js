@@ -11,7 +11,7 @@ module.exports = (env = {}, argv) => {
     const mode = 'development';
     const config = {
         entry: {
-            index: [path.resolve(SOURCE_PATH, 'index.js')]
+            index: [path.resolve(SOURCE_PATH, 'index')]
         },
         output: {
             path: DIST_PATH,
