@@ -10,13 +10,8 @@
     "build:css": "postcss src/**/*.css --base src --dir es ",
     "build:webpack": "webpack --config webpack.client.js --color --progress --mode=production",
     "build": "npm run build:webpack && npm run build:es && npm run build:css",
-    "lint": "run-p lint:*",
-    "lint:js": "elint lint es \"**/*.js\" \"**/*.jsx\"",
-    "lint:css": "elint lint style \"**/*.css\" \"**/*.less\"",
-    "fix": "run-p fix:*",
-    "fix:js": "elint lint es \"**/*.js\"  \"**/*.jsx\" --fix",
-    "fix:css": "elint lint style \"**/*.css\" \"**/*.less\" --fix",
-    "beforecommit": "elint lint commit && npm run lint",
+    "lint": "lintall",
+    "beforecommit": "lintall commit && lintall",
     "prepublish": "echo \" prepublish... \" && npm run build"
   },
   "repository": {
@@ -33,8 +28,8 @@
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.9.4",
     {{#if elint}}
-    "elint": "^1.11.1",
-    "@music/elint-preset-base": "^1.0.13",
+    "lintall-cli": "^0.1.2",
+    "lintall-preset-base": "^0.0.4",
     {{/if}}
     "autoprefixer": "^9.7.5",
     "babel-eslint": "^10.1.0",
